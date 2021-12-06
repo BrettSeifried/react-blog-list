@@ -8,5 +8,6 @@ export async function getBlogs() {
   //   return data;
 
   const response = await client.from('blogs').select();
+  //   console.log(response);
   return checkError(response);
 }
