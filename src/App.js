@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getBlogs();
-      // console.log(data);
+      console.log(data);
       setBlogs(data);
     };
     fetchData();
