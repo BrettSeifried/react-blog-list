@@ -7,7 +7,7 @@ export async function getBlogs() {
 
   //   return data;
 
-  const response = await client.from('blogs').select();
+  const response = await client.from('blogs').select('*, authors( name )');
   //   console.log(response);
   return checkError(response);
 }
